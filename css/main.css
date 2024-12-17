@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
+html, * {
+  font-size: 10px;
+  margin: 0px;
+}
+
+body {
+  font-family: "DM Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f6;
+}
+
+.container {
+  padding: 2rem;
+  width: 90%;
+  display: grid;
+  gap: 2rem;
+}
+.container > div {
+  border-radius: 1rem;
+}
+
+.element-1 {
+  background-color: hsl(256, 67%, 59%);
+  color: hsl(0, 0%, 100%);
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.element-1 > p {
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.element-1 > p > spam {
+  font-size: 4.8rem;
+  color: hsl(39, 100%, 71%);
+}
+.element-1 > p > i {
+  font-size: 4.8rem;
+}
+.element-1 > img {
+  padding-top: 2rem;
+  width: 50%;
+}
+.element-1 > span {
+  padding-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  display: block;
+}
+
+.element-2 {
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+.element-2 > img {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.element-2 p {
+  color: hsl(0, 0%, 7%);
+  font-family: "DM Sans";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.element-3 {
+  padding: 2rem 2rem 0rem 2rem;
+  background-color: hsl(39, 100%, 71%);
+  overflow: hidden;
+  height: 210px;
+}
+.element-3 > img {
+  width: 70%;
+  margin-top: 1rem;
+}
+.element-3 > p {
+  color: hsl(0, 0%, 7%);
+  font-family: "DM Sans";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 2rem;
+}
+
+.element-4 {
+  padding: 2rem;
+  background-color: hsl(254, 88%, 90%);
+  overflow: hidden;
+}
+.element-4 > img {
+  width: 100%;
+}
+.element-4 > p {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+.element-4 > .spam-text {
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1;
+  display: block;
+}
+
+.element-5 {
+  background-color: hsl(256, 67%, 59%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.element-5 > img {
+  width: 80%;
+}
+.element-5 > p {
+  width: 80%;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  padding-top: 3rem;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.element-6 {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.element-6 > img {
+  width: 60%;
+}
+.element-6 > spam {
+  font-size: 4rem;
+  font-weight: 500;
+}
+.element-6 > p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.element-7 {
+  background-color: hsl(31, 66%, 93%);
+  padding: 2rem;
+}
+.element-7 p {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.element-7 i {
+  font-size: 3rem;
+  font-weight: 500;
+  color: hsl(256, 67%, 59%);
+}
+.element-7 > img {
+  padding-top: 2rem;
+  width: 60%;
+}
+
+.element-8 {
+  background-color: hsl(39, 100%, 71%);
+  padding: 2rem;
+}
+.element-8 p {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.element-8 img {
+  padding-top: 2rem;
+  width: 70%;
+}
+
+@media (min-width: 1024px) {
+  html, * {
+    font-size: 10px;
+  }
+  body {
+    height: 100vh;
+  }
+  .container {
+    display: grid;
+    height: 80%;
+    width: 1024px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .element-1 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  .element-7 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .element-7 > p {
+    padding-top: 35%;
+  }
+  .element-7 > img {
+    width: 100%;
+  }
+  .element-4 {
+    grid-column: 4/5;
+    grid-row: 1/4;
+    padding: 3rem 2rem;
+  }
+  .element-4 > p {
+    line-height: 1;
+    text-align: left;
+  }
+  .element-4 > .spam-text {
+    text-align: left;
+    font-size: 1.6rem;
+  }
+  .element-4 > img {
+    width: 150%;
+  }
+  .element-8 {
+    grid-row: 3/5;
+  }
+  .element-8 > img {
+    width: 100%;
+  }
+  .element-8 > p {
+    font-size: 3.1rem;
+  }
+  .element-5 {
+    grid-row: 4/5;
+    grid-column: 3/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .element-5 > p {
+    width: 100%;
+    text-align: left;
+    padding-top: 0rem;
+  }
+  .element-5 > img {
+    width: 90%;
+  }
+  .element-6 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+  .element-6 > img {
+    width: 100%;
+  }
+  .element-2 {
+    grid-row: 2/4;
+    grid-column: 2/3;
+  }
+  .element-2 > p {
+    font-size: 3rem;
+  }
+  .element-2 > img {
+    width: 130%;
+  }
+  .element-3 {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    height: auto;
+  }
+  .element-3 > p {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  .element-3 > img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
